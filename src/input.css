@@ -1,5 +1,35 @@
 @import "tailwindcss";
+@tailwind utilities;
 
-.custom-div {
-  @apply w-full h-full bg-blue-300;
+@theme{
+  --breakpoint-xs: 450px;
+  --breakpoint-2xs: 320px;
+  --breakpoint-big: 1441px;
+
+  --color-yellow: #F1B332;
+  --color-white: #FFFFFF;
+  --color-grayish-blue: #262633;
+  --color-black: #000000;
+  --color-gray: #B4B4B4;
+  --color-light-gray: #797C7F;
+
+  --font-open-sans: "Open Sans", sans-serif;
+}
+.header .a{
+  @apply font-open-sans text-base text-white;
+}
+.header .logo{
+  @apply 2xs:max-w-[120px] xs:max-w-[170px] sm:max-w-[139px];
+}
+.header .yellow-button{
+  @apply text-grayish-blue my-[23px] bg-yellow hover:bg-yellow-200 rounded-full font-open-sans font-semibold py-[13px] px-[23.5px] uppercase leading-6 tracking-[0.04em] cursor-pointer;
+}
+.header .menu-links {
+  @apply hover:text-gray-200 py-4 px-6 w-full;
+}
+.header .header-container{
+  @apply bg-black px-16 w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16;
+}
+.hero-gradiant{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.05%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(360deg, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.55) 100%), url(1757588066979466.png);
 }

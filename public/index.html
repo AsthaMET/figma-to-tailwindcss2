@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career Compass</title>
-    <link href="./styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="custom-div">
-      <h1 class="text-2xl font-bold text-blue-700">Hello World!</h1>
-    </div>
 
-    <!-- Scripts -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./assets/js/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-container ">
+        <img src="./assets/images/logo.png" class="logo">
+        <div class="hidden md:flex gap-6 items-center ">
+          <a href="#" class="underline underline-offset-4 a">Explore</a>
+          <a href="#" class="a">Journeys</a>
+          <a href="#" class="a">Press</a>
+          <a href="#" class="a">Journal</a>
+          <a href="#" class="a">Contact</a>
+        </div>
+        <button
+          class="hidden md:block yellow-button"><a
+            href="#">Contact Us</a></button>
+
+      <button id="menuButton" class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none cursor-pointer ">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="w-8 h-8 text-white cursor-pointer" aria-hidden="true" focusable="false">
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+
+        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="hidden w-8 h-8 text-white cursor-pointer" aria-hidden="true" focusable="false">
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M6 18L18 6" />
+        </svg>
+
+        <div id="mobileMenu"
+          class="absolute top-[100px] right-0 h-fit w-full bg-black text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition">
+          <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-5">
+            <li class="menu-links"><a href="#">Accommodation</a></li>
+            <li class="menu-links"><a href="#">Location</a></li>
+            <li class="menu-links"><a href="#">Experiences</a></li>
+            <div class="text-grayish-blue bg-yellow rounded-full px-6 py-2 md:hidden block w-[90%] my-6 font-open-sans font-semibold uppercase leading-6 tracking-[0.04em]">
+              <a href="#">Plan Your Trip</a>
+            </div>
+          </ul>
+        </div>
+      </button>
+    </nav>  
+  </header>
+  <div class="h-screen bg-cover bg-center after:hero-gradiant after:z-50"> 
+    <video class="relative inset-0 w-full h-full object-cover z-10" autoplay muted loop>
+    <source src="./assets/images/1757588066979466.mp4" type="video/mp4">
+  </video>
+  </div>
+
+</body>
+
 </html>
