@@ -1,35 +1,108 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-@theme{
+@theme {
   --breakpoint-xs: 450px;
   --breakpoint-2xs: 320px;
   --breakpoint-big: 1441px;
 
-  --color-yellow: #F1B332;
-  --color-white: #FFFFFF;
+  --color-yellow: #f1b332;
+  --color-white: #ffffff;
   --color-grayish-blue: #262633;
   --color-black: #000000;
-  --color-gray: #B4B4B4;
-  --color-light-gray: #797C7F;
+  --color-gray: #b4b4b4;
+  --color-light-gray: #797c7f;
+  --color-skin: #cfc4a6;
+  --color-lightish-gray: #f3f2ee;
 
   --font-open-sans: "Open Sans", sans-serif;
+  --font-times-new-roman: "times-new-roman";
+  --font-times-new-roman-bold: "times-new-roman-bold";
 }
-.header .a{
+@font-face {
+  font-family: "times-new-roman";
+  src: url("../public/assets/fonts/Times\ New\ Roman.ttf");
+}
+@font-face {
+  font-family: "times-new-roman-bold";
+  src: url("../public/assets/fonts/Times\ New\ Roman\ -\ Bold.ttf");
+}
+h1 {
+  @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[50px] sm:text-[60px] md:text-[70px]
+   2xs:leading-[50px] sm:leading-[60px] md:leading-[70px] 2xs:mx-4 md:mx-0;
+}
+h6{
+  @apply font-times-new-roman-bold text-[28px] leading-[33.6px] mt-[22px];
+}
+.header .a {
   @apply font-open-sans text-base text-white;
 }
-.header .logo{
+.header .logo {
   @apply 2xs:max-w-[120px] xs:max-w-[170px] sm:max-w-[139px];
 }
-.header .yellow-button{
-  @apply text-grayish-blue my-[23px] bg-yellow hover:bg-yellow-200 rounded-full font-open-sans font-semibold py-[13px] px-[23.5px] uppercase leading-6 tracking-[0.04em] cursor-pointer;
+.header .yellow-button {
+  @apply text-grayish-blue my-[23px] bg-yellow hover:bg-yellow-200 rounded-full font-open-sans font-semibold py-[13px] px-[23.5px] uppercase leading-6 tracking-[0.04em] cursor-pointer transition;
+}
+.header .yellow-button-md {
+  @apply text-grayish-blue bg-yellow rounded-full px-6 py-2 md:hidden block w-[90%] my-6 font-open-sans font-semibold uppercase leading-6 tracking-[0.04em];
+}
+.white-button {
+  @apply text-grayish-blue bg-white hover:bg-grayish-blue hover:text-white rounded-full font-open-sans font-semibold py-[13px] px-6 uppercase leading-6 tracking-[0.04em] cursor-pointer transition;
 }
 .header .menu-links {
   @apply hover:text-gray-200 py-4 px-6 w-full;
 }
-.header .header-container{
+.header .header-container {
   @apply bg-black px-16 w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16;
 }
-.hero-gradiant{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.05%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(360deg, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.55) 100%), url(1757588066979466.png);
+.transition {
+  @apply transition-all duration-700 ease-in-out;
 }
+.premium-service .main-container {
+  @apply pt-[110px] 2xs:pt-[30px] xs:pt-10 sm:pt-[70px] md:pt-[110px];
+}
+.card .p{
+  @apply text-light-gray font-open-sans text-[17px] leading-[27.2px] max-w-[349px] my-[14.4px];
+}
+.premium-service .swiper-container{
+  @apply relative h-full bg-[url(./assets/images/premium-service-bg.png)] bg-cover mt-[100px] pl-[74px] pr-[76px] 
+  2xs:pl-5 2xs:pr-5 xs:pl-[30px] xs:pr-[30px] sm:pl-[50px] sm:pr-[50px] md:pl-[60px] md:pr-[60px] xl:pl-[74px] xl:pr-[76px]
+  2xs:mt-[30px] xs:mt-[50px] sm:mt-[70px] md:mt-[100px];
+}
+.premium-service .heading{
+  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[560px] justify-self-center 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px];
+}
+.swiper-pagination {
+  @apply  2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
+}
+.hero-gradiant {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 50.05%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    linear-gradient(360deg, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.55) 100%),
+    url(1757588066979466.png);
+}
+.swiper-slide {
+  font-size: 18px;
+  display: flex !important;
+  gap: 30px !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination{
+  bottom: 0 !important;
+  position: static !important;
+  margin-top: 60px;
+}
+.premium-service .card:hover{
+  cursor: pointer;
+}
+.premium-service .card:hover .card1{
+  scale: 2;
+} 
