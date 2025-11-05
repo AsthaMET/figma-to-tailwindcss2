@@ -18,6 +18,7 @@
   --font-open-sans: "Open Sans", sans-serif;
   --font-times-new-roman: "times-new-roman";
   --font-times-new-roman-bold: "times-new-roman-bold";
+  --font-dm-sans: "DM Sans", sans-serif;
 }
 @font-face {
   font-family: "times-new-roman";
@@ -27,7 +28,7 @@
   font-family: "times-new-roman-bold";
   src: url("../public/assets/fonts/Times\ New\ Roman\ -\ Bold.ttf");
 }
-h1 {
+.h1 {
   @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[50px] sm:text-[60px] md:text-[70px]
    2xs:leading-[50px] sm:leading-[60px] md:leading-[70px] 2xs:mx-4 md:mx-0;
 }
@@ -40,7 +41,7 @@ h6{
 .header .logo {
   @apply 2xs:max-w-[120px] xs:max-w-[170px] sm:max-w-[139px];
 }
-.header .yellow-button {
+.yellow-button {
   @apply text-grayish-blue my-[23px] bg-yellow hover:bg-yellow-200 rounded-full font-open-sans font-semibold py-[13px] px-[23.5px] uppercase leading-6 tracking-[0.04em] cursor-pointer transition;
 }
 .header .yellow-button-md {
@@ -62,7 +63,7 @@ h6{
   @apply pt-[110px] 2xs:pt-[30px] xs:pt-10 sm:pt-[70px] md:pt-[110px];
 }
 .card .p{
-  @apply text-light-gray font-open-sans text-[17px] leading-[27.2px] max-w-[349px] my-[14.4px];
+  @apply text-light-gray font-open-sans text-[17px] leading-[27.2px] my-[14.4px];
 }
 .premium-service .swiper-container{
   @apply relative h-full bg-[url(./assets/images/premium-service-bg.png)] bg-cover mt-[100px] pl-[74px] pr-[76px] 
@@ -73,7 +74,25 @@ h6{
   @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[560px] justify-self-center 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px];
 }
 .swiper-pagination {
-  @apply  2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
+  @apply 2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
+}
+.input{
+  @apply border border-black rounded-[100px] py-[15.5px] pl-5 pr-[27px] w-full mt-3.5 text-[12px];
+}
+.get-into-touch .main-container{
+  @apply flex mx-[120px] my-[100px] gap-[61px] 2xs:flex-col min-[1140px]:flex-row 2xs:mx-[30px] 2xs:my-[30px] xs:mx-10 xs:my-10 sm:mx-[50px] sm:my-[50px] md:mx-[70px] md:my-[70px] lg:mx-[120px] lg:my-[100px];
+}
+.heading{
+  @apply font-times-new-roman text-[50px] 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px] text-grayish-blue mt-[7px] leading-[57px] 2xs:leading-10 xs:leading-[50px] md:leading-[57px];
+}
+.get-into-touch .button{
+  @apply py-[13px] bg-yellow w-full rounded-[100px] text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] mt-[39px] mb-[30px] hover:bg-yellow-200 cursor-pointer transition;
+}
+.travel-agency .main-container{
+  @apply py-[100px] pl-[120px] pr-[116px] 2xs:px-[30px] 2xs:py-[30px] xs:px-10 xs:py-10 sm:px-[50px] sm:py-[50px] md:px-[70px] md:py-[70px] lg:pl-[120px] lg:pr-[116px] lg:py-[100px];
+}
+.travel-agency .button {
+  @apply py-[13px] px-[29.5px] bg-yellow text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] hover:bg-yellow-200 cursor-pointer transition;
 }
 .hero-gradiant {
   background: linear-gradient(
