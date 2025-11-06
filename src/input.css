@@ -87,7 +87,7 @@ html{
   @apply 2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
 }
 .input{
-  @apply border border-black rounded-[100px] py-[15.5px] pl-5 pr-[27px] w-full mt-3.5 text-[12px];
+  @apply border border-black rounded-[100px] py-[15.5px] pl-5 pr-[27px] w-full mt-3.5 text-[12px] text-gray;
 }
 .as-seen-in .heading{
   @apply font-open-sans text-[20px] leading-8 mb-[50px] 2xs:mb-[30px] xs:mb-10 sm:mb-[50px] mt-[117px] 2xs:mt-[30px] 
@@ -124,7 +124,7 @@ html{
   @apply px-[43px] 2xs:px-0 md:px-[43px] flex gap-[142px] 2xs:gap-[30px] xs:gap-10 sm:gap-[50px] md:gap-[142px] justify-between 2xs:flex-col min-[1100px]:flex-row;
 } 
 .footer .social-media{
-  @apply rounded-full border border-[#FFF5EB] px-[9px] pt-2.5 pb-2 hover:bg-yellow relative shadow-[0px_2px_14px_0px_#0406421A];
+  @apply rounded-full border border-[#FFF5EB] px-[9.5px] pt-[10.5px] pb-2 hover:bg-yellow relative shadow-[0px_2px_14px_0px_#0406421A];
 }
 .footer .social-media .ancher{
   @apply after:absolute after:inset-0 after:w-full after:h-full transition;
