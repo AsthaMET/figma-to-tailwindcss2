@@ -81,7 +81,7 @@ html{
   2xs:mt-[30px] xs:mt-[50px] sm:mt-[70px] md:mt-[100px];
 }
 .premium-service .heading{
-  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[560px] justify-self-center 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px];
+  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[523px] justify-self-center 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px];
 }
 .swiper-pagination {
   @apply 2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
