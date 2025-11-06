@@ -19,6 +19,7 @@
   --font-times-new-roman: "times-new-roman";
   --font-times-new-roman-bold: "times-new-roman-bold";
   --font-dm-sans: "DM Sans", sans-serif;
+  --font-croissant-one: "Croissant One", serif;
 }
 @font-face {
   font-family: "times-new-roman";
@@ -28,18 +29,27 @@
   font-family: "times-new-roman-bold";
   src: url("../public/assets/fonts/Times\ New\ Roman\ -\ Bold.ttf");
 }
+html{
+  @apply scroll-smooth;
+}
 .h1 {
   @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[50px] sm:text-[60px] md:text-[70px]
    2xs:leading-[50px] sm:leading-[60px] md:leading-[70px] 2xs:mx-4 md:mx-0;
 }
-h6{
-  @apply font-times-new-roman-bold text-[28px] leading-[33.6px] mt-[22px];
+.h6{
+  @apply font-times-new-roman-bold text-[28px] leading-[34px] mt-[22px];
 }
-.header .a {
-  @apply font-open-sans text-base text-white;
+.header .a{
+  @apply font-open-sans uppercase leading-[22px] text-base text-white hover:underline hover:text-yellow transition hover:underline-offset-3;
 }
-.header .logo {
-  @apply 2xs:max-w-[120px] xs:max-w-[170px] sm:max-w-[139px];
+.logo-1 {
+  @apply block text-white font-open-sans text-[13.45px] leading-[17.93px] mx-[7px] space-y-[11.95px] tracking-[20px] uppercase;
+}
+.logo-2 {
+  @apply block text-white font-croissant-one text-[37.36px] -mt-[9px];
+}
+.active_nav {
+  @apply bg-black max-w-full top-0 py-[23px] transition;
 }
 .yellow-button {
   @apply text-grayish-blue my-[23px] bg-yellow hover:bg-yellow-200 rounded-full font-open-sans font-semibold py-[13px] px-[23.5px] uppercase leading-6 tracking-[0.04em] cursor-pointer transition;
@@ -54,7 +64,7 @@ h6{
   @apply hover:text-gray-200 py-4 px-6 w-full;
 }
 .header .header-container {
-  @apply bg-black px-16 w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16;
+  @apply px-16 w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16;
 }
 .transition {
   @apply transition-all duration-700 ease-in-out;
@@ -79,6 +89,10 @@ h6{
 .input{
   @apply border border-black rounded-[100px] py-[15.5px] pl-5 pr-[27px] w-full mt-3.5 text-[12px];
 }
+.as-seen-in .heading{
+  @apply font-open-sans text-[20px] leading-8 mb-[50px] 2xs:mb-[30px] xs:mb-10 sm:mb-[50px] mt-[117px] 2xs:mt-[30px] 
+  xs:mt-10 sm:mt-[70px] md:mt-[90px] lg:mt-[117px] text-center underline underline-offset-3;
+}
 .get-into-touch .main-container{
   @apply flex mx-[120px] my-[100px] gap-[61px] 2xs:flex-col min-[1140px]:flex-row 2xs:mx-[30px] 2xs:my-[30px] xs:mx-10 xs:my-10 sm:mx-[50px] sm:my-[50px] md:mx-[70px] md:my-[70px] lg:mx-[120px] lg:my-[100px];
 }
@@ -93,6 +107,27 @@ h6{
 }
 .travel-agency .button {
   @apply py-[13px] px-[29.5px] bg-yellow text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] hover:bg-yellow-200 cursor-pointer transition;
+}
+.travel-agency .img{
+  @apply rounded-[20px] min-[1420px]:min-w-[585px] min-[1420px]:min-h-[622px];
+}
+.footer .a{
+  @apply text-white block font-open-sans leading-4 mt-[23px] hover:underline hover:text-yellow transition hover:underline-offset-3;
+}
+.footer .h6{
+  @apply text-white font-times-new-roman text-2xl leading-6 font-bold;
+}
+.footer .content{
+  @apply bg-black 2xs:px-[30px] xs:px-10 sm:px-[50px] md:px-[60px] lg:px-[75px] 2xs:pt-[30px] 2xs:pb-[30px] xs:pt-10 xs:pb-10 sm:pt-[50px] sm:pb-[50px] md:pt-[60px] md:pb-[60px] lg:pt-20 lg:pb-20 xl:pt-[111px] xl:pb-[89.05px];
+}
+.footer .sub-container{
+  @apply px-[43px] 2xs:px-0 md:px-[43px] flex gap-[142px] 2xs:gap-[30px] xs:gap-10 sm:gap-[50px] md:gap-[142px] justify-between 2xs:flex-col min-[1100px]:flex-row;
+} 
+.footer .social-media{
+  @apply rounded-full border border-[#FFF5EB] px-[9px] pt-2.5 pb-2 hover:bg-yellow relative shadow-[0px_2px_14px_0px_#0406421A];
+}
+.footer .social-media .ancher{
+  @apply after:absolute after:inset-0 after:w-full after:h-full transition;
 }
 .hero-gradiant {
   background: linear-gradient(
@@ -118,10 +153,6 @@ h6{
 }
 .premium-service .card:hover .card1{
   scale: 2;
-}
-.as-seen-in .heading{
-  @apply font-open-sans text-[20px] leading-8 mb-[50px] 2xs:mb-[30px] xs:mb-10 sm:mb-[50px] mt-[117px] 2xs:mt-[30px] 
-  xs:mt-10 sm:mt-[70px] md:mt-[90px] lg:mt-[117px] text-center underline underline-offset-3;
 }
 @keyframes marquee {
   0% {
