@@ -151,6 +151,9 @@ html{
   position: static !important;
   margin-top: 60px;
 }
+.swiper-pagination-bullets{
+  --swiper-theme-color: #f1b332 !important;
+}
 .premium-service .card:hover .card1{
   scale: 2;
 }
