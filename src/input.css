@@ -132,7 +132,7 @@ html{
 .footer .social-media{
   @apply rounded-full border border-[#FFF5EB] px-[9.5px] pt-[11px] pb-2 hover:bg-yellow relative shadow-[0px_2px_14px_0px_#0406421A];
 }
-.footer .social-media .ancher{
+.ancher{
   @apply after:absolute after:inset-0 after:w-full after:h-full transition;
 }
 .hero-gradiant {
