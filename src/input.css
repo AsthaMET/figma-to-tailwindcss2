@@ -121,7 +121,7 @@ html{
   @apply text-white block font-open-sans leading-4 mt-[23px] hover:underline hover:text-yellow transition hover:underline-offset-3;
 }
 .footer .h6{
-  @apply text-white font-times-new-roman text-2xl leading-6 font-bold;
+  @apply text-white font-times-new-roman text-2xl leading-6 font-bold mt-0!;
 }
 .footer .content{
   @apply bg-black 2xs:px-[30px] xs:px-10 sm:px-[50px] md:px-[60px] lg:px-[75px] 2xs:pt-[30px] 2xs:pb-[30px] xs:pt-10 xs:pb-10 sm:pt-[50px] sm:pb-[50px] md:pt-[60px] md:pb-[60px] lg:pt-20 lg:pb-20 xl:pt-[111px] xl:pb-[89.05px];

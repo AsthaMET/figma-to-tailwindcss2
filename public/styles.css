@@ -271,6 +271,9 @@
   .mb-\[134px\] {
     margin-bottom: 134px;
   }
+  .ml-\[9px\] {
+    margin-left: 9px;
+  }
   .ml-\[17px\] {
     margin-left: 17px;
   }
@@ -1284,6 +1287,7 @@ html {
   }
 }
 .footer .h6 {
+  margin-top: calc(var(--spacing) * 0) !important;
   font-family: var(--font-times-new-roman);
   font-size: var(--text-2xl);
   line-height: var(--tw-leading, var(--text-2xl--line-height));
