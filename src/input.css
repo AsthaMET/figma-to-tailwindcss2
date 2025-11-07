@@ -40,7 +40,7 @@ html{
   @apply font-times-new-roman-bold text-[28px] leading-[34px] mt-[22px];
 }
 .header .a{
-  @apply font-open-sans uppercase leading-[22px] text-base text-white hover:underline hover:text-yellow transition hover:underline-offset-3;
+  @apply font-open-sans uppercase my-1 tracking-[0.1px] leading-[22px] text-base text-white hover:underline hover:text-yellow transition hover:underline-offset-3;
 }
 .logo-1 {
   @apply block text-white font-open-sans text-[13.45px] leading-[17.93px] mx-[7px] space-y-[11.95px] tracking-[20px] uppercase;
