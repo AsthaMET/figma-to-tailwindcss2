@@ -33,7 +33,7 @@ html{
   @apply scroll-smooth;
 }
 .h1 {
-  @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[40px] sm:text-[60px] md:text-[70px]
+  @apply tracking-[0.02em] 2xs:text-[40px] xs:text-[40px] sm:text-[60px] md:text-[70px]
    2xs:leading-[50px] sm:leading-[60px] md:leading-[70px] 2xs:mx-4 md:mx-0;
 }
 .h6{
@@ -64,33 +64,36 @@ html{
   @apply hover:text-gray-200 py-4 px-6 w-full;
 }
 .header .header-container {
-  @apply px-16 w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16 gap-3;
+  @apply w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16 gap-3;
 }
 .transition {
   @apply transition-all duration-700 ease-in-out;
 }
 .premium-service .main-container {
-  @apply pt-[110px] 2xs:pt-[30px] xs:pt-10 sm:pt-[70px] md:pt-[110px];
+  @apply 2xs:pt-[30px] xs:pt-10 sm:pt-[70px] md:pt-[110px];
 }
 .card .p{
   @apply text-light-gray font-open-sans text-[17px] leading-[27.2px] my-[14.4px];
 }
 .premium-service .swiper-container{
-  @apply relative h-full bg-[url(./assets/images/premium-service-bg.png)] bg-cover mt-[100px] pl-[74px] pr-[76px] 
-  2xs:pl-5 2xs:pr-5 xs:pl-[30px] xs:pr-[30px] sm:pl-[50px] sm:pr-[50px] md:pl-[60px] md:pr-[60px] xl:pl-[74px] xl:pr-[76px]
-  2xs:mt-[30px] xs:mt-[50px] sm:mt-[70px] md:mt-[100px];
+  @apply relative h-full bg-[url(./assets/images/premium-service-bg.png)] bg-cover 2xs:pl-5 2xs:pr-5 xs:pl-[30px] 
+  xs:pr-[30px] sm:pl-[50px] sm:pr-[50px] md:pl-[60px] md:pr-[60px] xl:pl-[74px] xl:pr-[76px] 2xs:mt-[30px] xs:mt-[50px] 
+  sm:mt-[70px] md:mt-[100px];
 }
 .premium-service .heading{
-  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[523px] justify-self-center 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px];
+  @apply font-times-new-roman text-grayish-blue mt-[7px] max-w-[523px] justify-self-center 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px];
 }
 .swiper-pagination {
   @apply 2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
+}
+.slider{
+  @apply text-center 2xs:flex-col md:flex-row flex! gap-[30px]! text-[18px] justify-between items-center;
 }
 .input{
   @apply border border-black rounded-[100px] py-[15.5px] pl-5 pr-[27px] w-full mt-3.5 text-[12px] text-gray;
 }
 .as-seen-in .heading{
-  @apply font-open-sans text-[20px] leading-8 mb-[50px] 2xs:mb-[30px] xs:mb-10 sm:mb-[50px] mt-[117px] 2xs:mt-[30px] 
+  @apply font-open-sans text-[20px] leading-8 2xs:mb-[30px] xs:mb-10 sm:mb-[50px] 2xs:mt-[30px] 
   xs:mt-10 sm:mt-[70px] md:mt-[90px] lg:mt-[117px] text-center underline underline-offset-3;
 }
 .as-seen-in .img1-2{
@@ -100,16 +103,16 @@ html{
   @apply h-max object-contain;
 }
 .get-into-touch .main-container{
-  @apply flex mx-[120px] my-[100px] gap-[61px] 2xs:flex-col min-[1140px]:flex-row 2xs:mx-[30px] 2xs:my-[30px] xs:mx-10 xs:my-10 sm:mx-[50px] sm:my-[50px] md:mx-[70px] md:my-[70px] lg:mx-[120px] lg:my-[100px];
+  @apply flex gap-[61px] 2xs:flex-col min-[1140px]:flex-row 2xs:mx-[30px] 2xs:my-[30px] xs:mx-10 xs:my-10 sm:mx-[50px] sm:my-[50px] md:mx-[70px] md:my-[70px] lg:mx-[120px] lg:my-[100px];
 }
 .heading{
-  @apply font-times-new-roman text-[50px] 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px] text-grayish-blue mt-[7px] leading-[57px] 2xs:leading-10 xs:leading-[50px] md:leading-[57px];
+  @apply font-times-new-roman 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px] text-grayish-blue mt-[7px] 2xs:leading-10 xs:leading-[50px] md:leading-[57px];
 }
 .get-into-touch .button{
   @apply py-[13px] bg-yellow w-full rounded-[100px] text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] mt-[39px] mb-[30px] hover:bg-yellow-200 cursor-pointer transition;
 }
 .travel-agency .main-container{
-  @apply py-[100px] pl-[120px] pr-[116px] 2xs:px-[30px] 2xs:py-[30px] xs:px-10 xs:py-10 sm:px-[50px] sm:py-[50px] md:px-[70px] md:py-[70px] lg:pl-[120px] lg:pr-[116px] lg:py-[100px];
+  @apply 2xs:px-[30px] 2xs:py-[30px] xs:px-10 xs:py-10 sm:px-[50px] sm:py-[50px] md:px-[70px] md:py-[70px] lg:pl-[120px] lg:pr-[116px] lg:py-[100px];
 }
 .travel-agency .button {
   @apply py-[13px] px-[29.5px] bg-yellow text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] hover:bg-yellow-200 cursor-pointer transition;
@@ -127,10 +130,10 @@ html{
   @apply bg-black 2xs:px-[30px] xs:px-10 sm:px-[50px] md:px-[60px] lg:px-[75px] 2xs:pt-[30px] 2xs:pb-[30px] xs:pt-10 xs:pb-10 sm:pt-[50px] sm:pb-[50px] md:pt-[60px] md:pb-[60px] lg:pt-20 lg:pb-20 xl:pt-[111px] xl:pb-[89.05px];
 }
 .footer .sub-container{
-  @apply px-[43px] 2xs:px-0 md:px-[43px] flex gap-[142px] 2xs:gap-[30px] xs:gap-10 sm:gap-[50px] md:gap-[142px] justify-between 2xs:flex-col min-[1100px]:flex-row;
+  @apply 2xs:px-0 md:px-[43px] flex 2xs:gap-[30px] xs:gap-10 sm:gap-[50px] md:gap-[142px] justify-between 2xs:flex-col min-[1100px]:flex-row;
 } 
 .footer .social-media{
-  @apply rounded-full border border-[#FFF5EB] px-[9.5px] pt-[11px] pb-2 hover:bg-yellow relative shadow-[0px_2px_14px_0px_#0406421A];
+  @apply rounded-full border border-[#FFF5EB] px-[9.5px] pt-[11px] pb-2 hover:bg-yellow relative;
 }
 .ancher{
   @apply after:absolute after:inset-0 after:w-full after:h-full transition;
@@ -143,19 +146,6 @@ html{
     ),
     linear-gradient(360deg, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0.55) 100%),
     url(1757588066979466.png);
-}
-.swiper-slide {
-  font-size: 18px;
-  display: flex !important;
-  gap: 30px !important;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.swiper-pagination{
-  bottom: 0 !important;
-  position: static !important;
-  margin-top: 60px;
 }
 .swiper-pagination-bullets{
   --swiper-theme-color: #f1b332 !important;
