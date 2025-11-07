@@ -706,7 +706,7 @@ html {
     line-height: 50px;
   }
   @media (width >= 450px) {
-    font-size: 50px;
+    font-size: 40px;
   }
   @media (width >= 40rem) {
     font-size: 60px;
@@ -1000,7 +1000,7 @@ html {
     font-size: 35px;
   }
   @media (width >= 450px) {
-    font-size: 45px;
+    font-size: 40px;
   }
   @media (width >= 40rem) {
     font-size: 47px;
@@ -1128,7 +1128,7 @@ html {
     line-height: calc(var(--spacing) * 10);
   }
   @media (width >= 450px) {
-    font-size: 45px;
+    font-size: 40px;
   }
   @media (width >= 450px) {
     --tw-leading: 50px;

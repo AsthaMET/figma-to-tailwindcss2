@@ -33,7 +33,7 @@ html{
   @apply scroll-smooth;
 }
 .h1 {
-  @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[50px] sm:text-[60px] md:text-[70px]
+  @apply text-[70px] leading-[70px] tracking-[0.02em] 2xs:text-[40px] xs:text-[40px] sm:text-[60px] md:text-[70px]
    2xs:leading-[50px] sm:leading-[60px] md:leading-[70px] 2xs:mx-4 md:mx-0;
 }
 .h6{
@@ -81,7 +81,7 @@ html{
   2xs:mt-[30px] xs:mt-[50px] sm:mt-[70px] md:mt-[100px];
 }
 .premium-service .heading{
-  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[523px] justify-self-center 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px];
+  @apply font-times-new-roman text-[50px] text-grayish-blue mt-[7px] max-w-[523px] justify-self-center 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px];
 }
 .swiper-pagination {
   @apply 2xs:pb-10 xs:pb-[50px] sm:pb-[60px] md:pb-[113px];
@@ -97,7 +97,7 @@ html{
   @apply flex mx-[120px] my-[100px] gap-[61px] 2xs:flex-col min-[1140px]:flex-row 2xs:mx-[30px] 2xs:my-[30px] xs:mx-10 xs:my-10 sm:mx-[50px] sm:my-[50px] md:mx-[70px] md:my-[70px] lg:mx-[120px] lg:my-[100px];
 }
 .heading{
-  @apply font-times-new-roman text-[50px] 2xs:text-[35px] xs:text-[45px] sm:text-[47px] md:text-[50px] text-grayish-blue mt-[7px] leading-[57px] 2xs:leading-10 xs:leading-[50px] md:leading-[57px];
+  @apply font-times-new-roman text-[50px] 2xs:text-[35px] xs:text-[40px] sm:text-[47px] md:text-[50px] text-grayish-blue mt-[7px] leading-[57px] 2xs:leading-10 xs:leading-[50px] md:leading-[57px];
 }
 .get-into-touch .button{
   @apply py-[13px] bg-yellow w-full rounded-[100px] text-grayish-blue font-open-sans font-semibold uppercase leading-6 tracking-[0.04em] mt-[39px] mb-[30px] hover:bg-yellow-200 cursor-pointer transition;
