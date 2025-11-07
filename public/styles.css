@@ -238,6 +238,9 @@
   .mt-\[9px\] {
     margin-top: 9px;
   }
+  .mt-\[17px\] {
+    margin-top: 17px;
+  }
   .mt-\[22px\] {
     margin-top: 22px;
   }
@@ -261,6 +264,9 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .mb-\[34px\] {
+    margin-bottom: 34px;
   }
   .mb-\[134px\] {
     margin-bottom: 134px;
@@ -373,9 +379,6 @@
   }
   .bg-center {
     background-position: center;
-  }
-  .object-contain {
-    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -885,6 +888,7 @@ html {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  gap: calc(var(--spacing) * 3);
   padding-inline: calc(var(--spacing) * 16);
   padding-block: calc(var(--spacing) * 5);
   @media (width >= 320px) {
@@ -1070,6 +1074,15 @@ html {
   @media (width >= 64rem) {
     margin-top: 117px;
   }
+}
+.as-seen-in .img1-2 {
+  height: fit-content;
+  align-self: center;
+  object-fit: contain;
+}
+.as-seen-in .img3 {
+  height: max-content;
+  object-fit: contain;
 }
 .get-into-touch .main-container {
   margin-inline: 120px;
