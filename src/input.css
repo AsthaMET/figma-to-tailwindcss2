@@ -67,7 +67,7 @@ html{
   @apply w-full justify-between items-center flex z-50 fixed py-5 md:py-0 2xs:px-5 xs:px-8 sm:px-10 md:px-12 lg:px-16 gap-3;
 }
 .transition {
-  @apply transition-all duration-700 ease-in-out;
+  @apply transition-all 5s ease-out;
 }
 .premium-service .main-container {
   @apply 2xs:pt-[30px] xs:pt-10 sm:pt-[70px] md:pt-[110px];
